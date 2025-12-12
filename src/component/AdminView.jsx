@@ -11,7 +11,7 @@ const AdminView = ({ setView }) => {
       <div className="flex space-x-30">
         <button
           className="px-8 py-3 text-base border border-gray-300 rounded-md bg-white shadow-md cursor-pointer font-bold transition duration-150 hover:bg-gray-100"
-          onClick={() => setView("")}
+          onClick={() => setView("User")}
         >
           User Home View
         </button>
@@ -21,6 +21,34 @@ const AdminView = ({ setView }) => {
         >
           Admin Home View
         </button>
+      </div>
+      <div className="w-full max-w-2xl px-6 mb-12">
+        <p className="text-lg font-medium mb-4 text-gray-800">
+          Create User Here
+        </p>
+        <div className="flex space-x-4 items-center">
+          <input
+            type="text"
+            placeholder="Name"
+            className="flex-1 p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+          />
+
+          <input
+            type="text"
+            placeholder="Last Name"
+            className="flex-1 p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+          />
+
+          <input
+            type="text"
+            placeholder="Position"
+            className="flex-1 p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+          />
+
+          <button className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700 transition duration-150">
+            Save
+          </button>
+        </div>
       </div>
       <div className="w-4/5 max-w-2xl mt-4">
         <p className="text-xs mb-1 text-gray-600">Table 1</p>
